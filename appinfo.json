@@ -1,0 +1,27 @@
+{
+    "appKeys": {
+        "message": 1,
+        "status": 0
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "pete@sevander.com",
+    "enableMultiJS": true,
+    "longName": "sleepebble",
+    "projectType": "native",
+    "resources": {
+        "media": []
+    },
+    "sdkVersion": "3",
+    "shortName": "sleepebble",
+    "targetPlatforms": [
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "5b2328f0-9cd6-4751-ba59-d62860dd5af4",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
