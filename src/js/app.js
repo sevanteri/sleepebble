@@ -26,7 +26,7 @@ Pebble.addEventListener("appmessage", function(e) {
 });
 
 Pebble.addEventListener('showConfiguration', function() {
-  var url = 'http://example.com/config.html';
+  var url = 'https://raw.githubusercontent.com/sevanteri/sleepebble/master/config/config.html';
 
   Pebble.openURL(url);
 });

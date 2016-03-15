@@ -57,7 +57,7 @@ static void init(void) {
     window_set_click_config_provider(s_window, 
                                      click_config_provider);
     
-    start_worker();
+    //start_worker();
 }
 
 static void deinit(void) {
@@ -65,7 +65,14 @@ static void deinit(void) {
 }
 
 int main( void ) {
-    init();
-    app_event_loop();
-    deinit();
+    AppLaunchReason reason = launch_reason();
+    APP_LOG(APP_LOG_LEVEL_INFO, "Launch reason: %d", (int)reason);
+    
+    if (reason != APP_LAUNCH_WORKER) {
+        init();
+        app_event_loop();
+        deinit();
+    } else {
+        APP_LOG(APP_LOG_LEVEL_INFO, "Launched from worker");
+    }
 }
