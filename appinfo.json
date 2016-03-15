@@ -4,24 +4,25 @@
         "status": 0
     },
     "capabilities": [
-        ""
+        "configurable",
+        "health"
     ],
     "companyName": "pete@sevander.com",
     "enableMultiJS": true,
-    "longName": "sleepebble",
+    "longName": "Sleepebble, health data sender",
     "projectType": "native",
     "resources": {
         "media": []
     },
     "sdkVersion": "3",
-    "shortName": "sleepebble",
+    "shortName": "Sleepebble",
     "targetPlatforms": [
-        "basalt",
-        "chalk"
+        "basalt"
     ],
     "uuid": "5b2328f0-9cd6-4751-ba59-d62860dd5af4",
-    "versionLabel": "1.0",
+    "versionLabel": "0.1",
     "watchapp": {
+        "onlyShownOnCommunication": true,
         "watchface": false
     }
 }
