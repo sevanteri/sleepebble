@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>config stub</title>
+    </head>
+    <body>
+        <p>config</p>
+
+        <button id="closeButton">Close</button>
+
+
+        <script>
+            var closeButton = document.getElementById("closeButton");
+
+            closeButton.addEventListener('click', function(event) {
+                document.location = 'pebblejs://close#';
+            });
+        </script>
+    </body>
+</html>
